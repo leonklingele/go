@@ -40,6 +40,10 @@ const (
 	BLAKE2b_256                 // import golang.org/x/crypto/blake2b
 	BLAKE2b_384                 // import golang.org/x/crypto/blake2b
 	BLAKE2b_512                 // import golang.org/x/crypto/blake2b
+	Keccak_224                  // import golang.org/x/crypto/sha3
+	Keccak_256                  // import golang.org/x/crypto/sha3
+	Keccak_384                  // import golang.org/x/crypto/sha3
+	Keccak_512                  // import golang.org/x/crypto/sha3
 	maxHash
 )
 
@@ -63,6 +67,10 @@ var digestSizes = []uint8{
 	BLAKE2b_256: 32,
 	BLAKE2b_384: 48,
 	BLAKE2b_512: 64,
+	Keccak_224:  28,
+	Keccak_256:  32,
+	Keccak_384:  48,
+	Keccak_512:  64,
 }
 
 // Size returns the length, in bytes, of a digest resulting from the given hash
